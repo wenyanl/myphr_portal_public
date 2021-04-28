@@ -1,0 +1,277 @@
+.App {
+  text-align: center;
+}
+body {
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+img {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+  margin: -55px 0 50px -50px;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+}
+.left-container {
+  padding-top: 250px;
+}
+h3 .name {
+  font-weight: bolder;
+  margin-left: 20px;
+  position: absolute;
+  align-content: center;
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 1px;
+}
+ul {
+  list-style-type: none;
+}
+
+.App-header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.topnav {
+  border-bottom: 0.1px solid gray;
+  padding-bottom: 7px;
+  position: relative;
+}
+.selectedLink {
+  border-top: 0.1px solid gray;
+  border-left: 0.1px solid gray;
+  border-right: 0.1px solid gray;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  color: black;
+}
+.nav-style {
+  margin-right: 20px;
+}
+
+.editor a {
+  float: left;
+  color: blue;
+  text-align: center;
+  padding-bottom: 10%;
+  padding-left: 50px;
+  text-decoration: underline;
+  font-size: 14px;
+  position: absolute;
+}
+.account {
+  margin-top: 5px;
+  margin-left: -10px;
+}
+.account a {
+  font-size: 15px;
+}
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 19%;
+  height: 10;
+  padding: 50px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 20px 0 0 40px;
+  position: relative;
+}
+.column2 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  position: relative;
+}
+.nav-active:global(.active) {
+  text-decoration: underline;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+  box-sizing: border-box;
+}
+/*nav for page profile*/
+.profile-nav a {
+  display: block;
+  color: orange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.alert-links {
+  width: 200px;
+}
+
+.alert-links a {
+  font-size: 17px;
+  color: blue;
+  display: block;
+  padding: 2px;
+  text-decoration: underline;
+}
+
+.main-place {
+  height: 500px;
+}
+/** tab content area **/
+
+/**TO DO ------Change to relative */
+.tab-content {
+  background-color: white;
+  color: black;
+  width: 105%;
+  height: 650px;
+  text-align: left;
+  padding: 50px 50px;
+  margin-left: -30px;
+  border: 2px solid white;
+  border-radius: 0 20px 20px 20px;
+  padding-bottom: 0px;
+}
+.edit-scroll {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+/* tab nav area */
+.flex-column .nav-item {
+  border-radius: 20px 0 0 20px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+.flex-column .nav-item :global(.active) {
+  background-color: #ffffff;
+  color: black;
+  border-radius: 20px 0 0 20px;
+  outline: none !important;
+  text-decoration: underline;
+}
+
+.container {
+  height: 100%;
+  background-color: red;
+}
+.vertical-timeline-element--work {
+  width: 1200px;
+}
+.time-space {
+  height: 500px;
+  background-color: brown;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/**login in page**/
+.loginPage {
+  text-align: center;
+
+  background-image: url(./images/LoginPage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.tab-content {
+  background-image: url(./images/doctors_blured.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.alerts-container {
+  background-image: url(./images/books.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.appName {
+  font-size: 30px;
+  text-align: right;
+}
+form {
+  /**
+  margin: 300px 600px 100px 500px;
+  
+  border: 1px solid black;
+  **/
+  margin-top: 17%;
+  margin-bottom: 13%;
+  display: inline-block;
+}
+input[type="submit"] {
+  margin-left: 140px;
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+  margin-right: 4px;
+}
+label {
+  /* Other styling... */
+  text-align: right;
+  clear: both;
+  float: left;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.btn {
+  margin-bottom: 11%;
+  margin-right: 5px;
+  float: right;
+}
+.btn-toolbar {
+  float: right;
+  margin-right: 2%;
+}
+.login-button {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 24px;
+}
+.login-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+.episodes {
+  background-image: url(./images/doctors_blured.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 117%;
+}
